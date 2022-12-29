@@ -14,6 +14,8 @@
 		04BCF46C295B02DC00A420B6 /* OnlineShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF46A295B02DC00A420B6 /* OnlineShop.xcdatamodeld */; };
 		04BCF46E295B02DE00A420B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCF46D295B02DE00A420B6 /* Assets.xcassets */; };
 		04BCF471295B02DE00A420B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BCF46F295B02DE00A420B6 /* LaunchScreen.storyboard */; };
+		04BCF47D295B587900A420B6 /* mainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF47C295B587900A420B6 /* mainCollectionViewCell.swift */; };
+		04BCF480295B7E5200A420B6 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF47F295B7E5200A420B6 /* ItemModel.swift */; };
 		4278D61EA6057690755F7EE5 /* Pods_OnlineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC59FD792C6FAFE3312C686 /* Pods_OnlineShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		04BCF46D295B02DE00A420B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BCF470295B02DE00A420B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BCF472295B02DE00A420B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BCF47C295B587900A420B6 /* mainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCollectionViewCell.swift; sourceTree = "<group>"; };
+		04BCF47F295B7E5200A420B6 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		3CC59FD792C6FAFE3312C686 /* Pods_OnlineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B1509560E219DB06D6B386 /* Pods-OnlineShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineShop.release.xcconfig"; path = "Target Support Files/Pods-OnlineShop/Pods-OnlineShop.release.xcconfig"; sourceTree = "<group>"; };
 		FBFED4AAB9C05CA0C3136046 /* Pods-OnlineShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineShop.debug.xcconfig"; path = "Target Support Files/Pods-OnlineShop/Pods-OnlineShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			children = (
 				04BCF47A295B031900A420B6 /* Delegate */,
 				04BCF479295B030900A420B6 /* View */,
+				04BCF47E295B7E0B00A420B6 /* Model */,
 				04BCF478295B02EC00A420B6 /* Controllers */,
 				04BCF46D295B02DE00A420B6 /* Assets.xcassets */,
 				04BCF472295B02DE00A420B6 /* Info.plist */,
@@ -78,7 +83,7 @@
 		04BCF478295B02EC00A420B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				04BCF465295B02DC00A420B6 /* ViewController.swift */,
+				04BCF47B295B584A00A420B6 /* ViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +106,23 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		04BCF47B295B584A00A420B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF465295B02DC00A420B6 /* ViewController.swift */,
+				04BCF47C295B587900A420B6 /* mainCollectionViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04BCF47E295B7E0B00A420B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF47F295B7E5200A420B6 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3E4EC1540AEF2175A33857BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +137,6 @@
 				FBFED4AAB9C05CA0C3136046 /* Pods-OnlineShop.debug.xcconfig */,
 				B3B1509560E219DB06D6B386 /* Pods-OnlineShop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -234,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BCF480295B7E5200A420B6 /* ItemModel.swift in Sources */,
+				04BCF47D295B587900A420B6 /* mainCollectionViewCell.swift in Sources */,
 				04BCF466295B02DC00A420B6 /* ViewController.swift in Sources */,
 				04BCF462295B02DC00A420B6 /* AppDelegate.swift in Sources */,
 				04BCF46C295B02DC00A420B6 /* OnlineShop.xcdatamodeld in Sources */,
